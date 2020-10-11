@@ -1,0 +1,391 @@
+body, h1, h2, h3, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main {
+    background: url('img/bg.jpg') center center/cover no-repeat;
+    padding: 0 0 30px;
+}
+
+.main_inner {
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 246, 198, 0.212);
+}
+
+.logo {
+    width: 306px;
+    height: 80px;
+    position: relative;
+    left: -4.6%;
+}
+
+.logo img {
+    width: 200px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.logo .logo_inner {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    filter: blur(25px);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_left {
+    margin-top: 15px;
+    width: 58%;
+}
+
+.main_title {
+    width: 98%;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #118976;
+    text-shadow: 2px 2px 0px #FFFFFF;
+}
+
+.main_leftBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transform: translateY(-45px);
+}
+
+.main_features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 12px;
+    width: 352px;
+    height: 266px;
+}
+
+.main_feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main_icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 25px;
+}
+
+.main_descr {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+.main_image {
+    width: 176px;
+    height: 388px;
+}
+
+.main_right {
+    width: 32.4%;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    margin-top: 30px;
+    padding: 24px 32px;
+}
+
+.main_rightTitle {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.01em;
+    color: #333333;
+    text-align: center;
+}
+
+.main_rightSub {
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #FF2C2C;
+    text-align: center;
+}
+
+.main_price {
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 1.11;
+    color: #FF2C2C;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.main_form {
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_input {
+    width: 83%;
+    height: 42px;
+    border: 1px solid #089C84;
+    border-radius: 2px;
+    padding: 10px 19px;
+    appearance: none;
+    color: #333;
+}
+
+.main_input::placeholder {
+    color: #333;
+}
+
+.main_input:nth-child(1), .main_input:nth-child(2) {
+    margin-bottom: 12px;
+}
+
+.main_input:nth-child(1) {
+    background: url(img/chevron.svg) right no-repeat;
+    background-position-x: calc(100% - 15px);
+}
+
+.main_button {
+    margin-top: 21px;
+    width: 83%;
+    height: 56px;
+    background: #FF272B;
+    border: none;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main_subform {
+    margin-top: 16px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #828282;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+
+    .main {
+        padding: 0 0 44px;
+    }
+
+    .main_title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+
+    .main_title {
+        font-size: 36px;
+    }
+
+    .main_leftBottom {
+        transform: translateY(30px);
+    }
+
+    .main_descr {
+        font-size: 17px;
+    }
+
+    .main_image {
+        width: 142px;
+        height: 324px;
+    }
+
+    .main_right {
+        height: 520px;
+    }
+
+    .main_rightTitle {
+        font-size: 24px;
+    }
+
+    .main_rightSub {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    .main_form {
+        margin-top: 48px;
+    }
+
+    .main_input, .main_button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 560px;
+    }
+
+    .main {
+        background: url('img/mobbg.jpg') center center/cover no-repeat;
+    }
+
+    .logo {
+        left: 0;
+        top: 16px;
+        margin: 0 auto;
+    }
+
+    .main_wrapper {
+        flex-direction: column;
+    }
+
+    .main_left {
+        margin-top: 31px;
+        width: 100%;
+    }
+
+    .main_title {
+        margin: 0 auto;
+        width: 56%;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .main_leftBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main_features {
+        width: 48%;
+    }
+
+    .main_descr {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+
+    .main_image {
+        width: 176px;
+        height: 388px;
+        margin-top: 30px;
+    }
+
+    .main_right {
+        margin: 74px auto 0;
+        width: 74%;
+        height: auto;
+    }
+
+    .main_rightTitle {
+        font-size: 28px;
+    }
+
+    .main_rightSub {
+        font-size: 22px;
+        margin-top: 44px;
+    }
+
+    .main_form {
+        margin-top: 53px;
+    }
+}
+
+@media (max-width: 599px) {
+    .container {
+        width: 390px;
+    }
+
+    .main_title {
+        width: 74%;
+    }
+
+    .main_features {
+        width: 68%;
+    }
+
+    .main_right {
+        width: 80%;
+    }
+}
+
+@media (max-width: 424px) {
+    .container {
+        width: 350px;
+    }
+
+    .main_features {
+        width: 74%;
+    }
+
+    .main_right {
+        width: 86%;
+    }
+}
+
+@media (max-width: 374px) {
+    .container {
+        width: 300px;
+    }
+
+    .logo {
+        width: 280px;
+    }
+
+    .main_title {
+        width: 84%;
+    }
+
+    .main_features {
+        width: 86%;
+    }
+    .main_right {
+        width: 100%;
+    }
+}
